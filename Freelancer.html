@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>freelancer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container bg-secondary rounded-3 p-3 mt-lg-5 mb-lg-5" id="formulario">
+        <div class="mb-4">
+            <a href="main.html">
+                <button class="btn btn-primary">voltar</button>
+            </a>
+        </div>
+        <div class="d-flex justify-content-start">
+            <div class="form-floating mb-3 col-5" id="nome">
+                <input type="text" class="form-control" placeholder="Insira seu nome" id="uname"></input>
+                <label for="floatingInput">Nome</label>
+            </div>
+            <div class="form-floating mb-3 col-5 offset-2">
+                <input type="text" class="form-control" placeholder="Insira seu sobrenome" id="sobrenome"></input>
+                <label for="floatingInput">Sobrenome</label>
+            </div>
+        </div>
+        <div class="form-floating mb-3" id="email">
+            <input type="email" class="form-control" id="floatingInput" placeholder="nome@exemplo.com">
+            <label for="floatingInput">Endereço de Email</label>
+        </div>
+        <div class="form-floating mb-3" id="senha">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Insira uma Senha">
+            <label for="floatingPassword">Senha</label>
+        </div>
+        <div class="d-flex">
+            <div class="form-floating mb-3 col-3">
+                <input type="text" class="form-control" placeholder="(99)99999-9999" id="telefone"></input>
+                <label for="floatingInput">Telefone</label>
+            </div>
+            <div class="form-floating mb-3 col-3 offset-1" >
+                <select class="form-select" id="idioma" aria-label="Floating label select example">
+                    <option selected>Português (PT-BR)</option>
+                    <option value="Inglês (IN)">Inglês (IN)</option>
+                    <option value="Espanhol (ES)">Espanhol (ES)</option>
+                    <option value="Francês (FR)">Francês (FR)</option>
+                    <option value="Italiano (IT)">Italiano (IT)</option>
+                    <option value="Alemão (DE)">Alemão (DE)</option>
+                    <option value="Japonês (JA)">Japonês (JA)</option>
+                </select>
+                <label for="floatingSelect">Idioma</label>
+            </div>
+            <div class="form-floating mb-3 col-3 offset-1">
+                <select class="form-select" id="genero" aria-label="Floating label select example">
+                    <option selected>Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Transgênero">Transgênero</option>
+                    <option value="Bigênero">Bigênero</option>
+                    <option value="Outro">Outro</option>
+                    <option value="Prefiro não informar">Prefiro não informar</option>
+                </select>
+                <label for="floatingSelect">Gênero</label>
+            </div>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Deixe um comentário aqui" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Mensagem</label>
+        </div>
+        <div class="mb-3" id="prototipo__arquivo">
+            <label for="formFileMultiple" class="form-label text-light">Protótipo (Requisitos)</label>
+            <input class="form-control" type="file" id="ArquivosMultiplos" multiple>
+        </div>
+        <div class="d-flex" id="linguagem__programacao">
+            <div class="container-sm bg-black bg-opacity-10 text-light border border-1 rounded-3 mb-3 pb-2 col-5">
+                <h5>Escolha as linguagens:</h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Python" name="linguagem">
+                    <label class="form-check-label" for="inlineCheckbox1">Python</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="PHP" name="linguagem">
+                    <label class="form-check-label" for="inlineCheckbox2">PHP</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="JavaScript" name="linguagem">
+                    <label class="form-check-label" for="inlineCheckbox3">JavaScript</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Kotlin" name="linguagem">
+                    <label class="form-check-label" for="inlineCheckbox4">Kotlin</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Swift" name="linguagem">
+                    <label class="form-check-label" for="inlineCheckbox5">Swift</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Objective-C" name="linguagem">
+                    <label class="form-check-label" for="inlineCheckbox6">Objective-C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="Java" name="linguagem">
+                    <label class="form-check-label" for="inlineCheckbox7">Java</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="C" name="linguagem">
+                    <label class="form-check-label" for="inlineCheckbox8">C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="C#" name="linguagem">
+                    <label class="form-check-label" for="inlineCheckbox9">C#</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="C++" name="linguagem">
+                    <label class="form-check-label" for="inlineCheckbox10">C++</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="N/D" name="linguagem">
+                    <label class="form-check-label" for="inlineCheckbox11">N/D</label>
+                </div>
+                <div class="form-check form-check-inline" id="caixa" onclick="outros()">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="Outro" name="linguagem">
+                    <label class="form-check-label" for="inlineCheckbox12" id="outros">Outro</label>
+                </div>
+            </div>
+            <div id="Banco__de__Dados" class="container-sm bg-black bg-opacity-10 text-light border border-1 rounded-3 mb-3 pb-2 col-5 offset-2">
+                <h5>Escolha o banco de dados:</h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="BancoDado" id="inlineRadio1"
+                        value="MySQL">
+                    <label class="form-check-label" for="inlineRadio1">MySQL</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="BancoDado" id="inlineRadio2"
+                        value="PostgreSQL">
+                    <label class="form-check-label" for="inlineRadio2">PostgreSQL</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="BancoDado" id="inlineRadio3"
+                        value="MongoDB">
+                    <label class="form-check-label" for="inlineRadio3">MongoDB</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="BancoDado" id="inlineRadio4"
+                        value="OracleBD">
+                    <label class="form-check-label" for="inlineRadio4">OracleBD</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="BancoDado" id="inlineRadio5"
+                        value="N/D">
+                    <label class="form-check-label" for="inlineRadio5">N/D</label>
+                </div>
+                <div class="form-check form-check-inline" id="caixa2" onclick="outros2()">
+                    <input class="form-check-input" type="radio" name="BancoDado" id="inlineRadio6"
+                        value="Outro">
+                    <label class="form-check-label" for="inlineRadio6" id="outros2">Outro</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-sm bg-black bg-opacity-10 text-light border border-1 rounded-3 pb-2 mb-3 ">
+            <div class="row align-items-center">
+                <div class="col-4" id="turno">
+                    <h6>Escolha os Turnos para reuniões</h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="Manhã" name="turno">
+                        <label for="inlineCheckbox13">
+                            <h6 class="form-check-label">Manhã</h6>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox14" value="Tarde" name="turno">
+                        <label for="inlineCheckbox14">
+                            <h6 class="form-check-label">Tarde</h6>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline" value="option15">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox15" value="Noite" name="turno">
+                        <label for="inlineCheckbox15" value="option15">
+                            <h6 class="form-check-label" value="option15">Noite</h6>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-4" id="horario">
+                    <h6 for="time" class="form-label">Horario previsto das Reuniões</h6>
+                    <div>
+                        <input type="time" id="time" name="time" class="form-control">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div>
+                        <h6 for="date" class="form-label">Data Prevista de Entrega</h6>
+                        <input type="date" id="data" name="date" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex justify-content-between">
+            <button id="enviar" onclick="validarDadosPessoais()" class="btn btn-primary" type="submit">Enviar</button>
+            <a href="Freelancer.html"><button id="enviar" class="btn btn-primary" type="submit">limpar</button></a>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

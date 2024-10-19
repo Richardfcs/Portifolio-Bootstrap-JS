@@ -1,0 +1,136 @@
+:root {
+    --cor-principal: #0ACF83;
+    --cor-secundária: #001E36;
+    --cor-terciária: #22D4FD;
+    --cor-branca: #FFFFFF;
+    --tipo-fonte-titulo: "Koulen", sans-serif;
+    --tipo-fonte-destaque: "Lalezar", system-ui;
+    --tipo-fonte-destaque-alternativo: "Krona One", sans-serif;
+    --tipo-fonte-paragrafo: "Inter", sans-serif;
+}
+body {
+    background: var(--cor-principal) !important;
+}
+#barra__vertical {
+    background-color: var(--cor-secundária);
+    left: 0;
+    position: fixed;
+}
+#barra__inferior {
+    background-color: var(--cor-secundária);
+    bottom: 0rem;
+    position: fixed;
+}
+#barra__horizontal__conteudo {
+    background-color: var(--cor-terciária);
+}
+h1 {
+    font-family: var(--tipo-fonte-titulo);
+}
+h2 {
+    font-family: var(--tipo-fonte-destaque);
+}
+h3 {
+    font-family: var(--tipo-fonte-destaque-alternativo);
+}
+#barra__horizontal__Conteiner{
+    margin: 0;
+    padding: 4rem 0 0 0;
+}
+#foto__perfil {
+    height: calc(27.325rem + .9vw);
+    width: calc(27.325rem + .9vw);
+    border: 0.25rem solid #001E36;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+}
+#botao__comecar__link{
+    font-family: var(--tipo-fonte-destaque-alternativo);
+    color: var(--cor-secundária) !important;
+    text-decoration: none !important;
+    font-size: xx-large !important;
+}
+#Perfil, #Formação, #Cursos, #Habilidades, #Projetos, #Contato {
+    padding: 6rem 0 6rem 0;
+}
+#escola__img {
+    height: 16rem;
+}
+#faculdade__img, #escola__img{
+    width: 35rem;
+}
+#ennet__img {
+    height: 17.5rem;
+}
+#fix__img {
+    height: 30rem;
+}
+#img__contatos {
+    width: 7.5rem;
+}
+#alura__img {
+    height: 17.5rem;
+}
+#barra__navegação {
+    background-color: var(--cor-principal) !important;
+}
+@media (max-width: 992px) {
+    #barra__vertical {
+        width: 0.5rem !important;
+    }
+    #barra__horizontal__Conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #foto__perfil {
+        height: calc(17.325rem + .9vw);
+        width: calc(17.325rem + .9vw);
+        text-align:center !important;
+    }
+    #barra__horizontal__Conteiner{
+        padding: 3rem 0 0 0;
+    }
+    /* #barra__navegação {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+    #Perfil__container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+    }
+    #Formação__container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+    }
+    #Cursos__container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+    }
+    #Habilidades__container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+    }
+    #Projetos__conteiner {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+    }
+    #contatos__container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+    }
+ }
