@@ -149,7 +149,7 @@ function validarDadosPessoais() {
         alert('Formulário enviado com sucesso!, verifique no console')
 
         setTimeout(() => {
-            window.location.href = "main.html"; // Substitua pelo URL da sua página
+            window.location.href = "main.html";
           }, 10000);
     }
 }
@@ -170,7 +170,7 @@ function obterValorRadio(nomeDoGrupo) {
     if (radioSelecionado) {
       return radioSelecionado.value;
     } else {
-      return null; // Ou uma string vazia, ou qualquer valor padrão que você preferir
+      return null;
     }
 }
 function obterNomesArquivos(inputId) {
