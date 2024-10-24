@@ -154,11 +154,6 @@ function validarDadosPessoais() {
     }
 }
 
-function validarDadosAdicionais() {
-
-    
-
-}
 function obterValoresCheckbox(nomeDoGrupo) {
     const checkboxes = document.querySelectorAll(`input[name="${nomeDoGrupo}"]:checked`);
     const valores = Array.from(checkboxes).map(checkbox => checkbox.value);
